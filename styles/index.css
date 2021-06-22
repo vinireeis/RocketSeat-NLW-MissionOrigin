@@ -5,15 +5,29 @@
   box-sizing: border-box;
 }
 
-:root {
+html {
   font-size: 62.5%;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 #header {
   height: 7.2rem;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+}
+
 .container {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin-left: 2.4rem;
+  margin-right: 2.4rem;
 }
