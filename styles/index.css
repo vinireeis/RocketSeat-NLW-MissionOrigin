@@ -5,10 +5,15 @@
   box-sizing: border-box;
 }
 
-html {
+:root {
   font-size: 62.5%;
 }
 
 #header {
   height: 7.2rem;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
 }
