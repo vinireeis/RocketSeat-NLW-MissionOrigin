@@ -1,29 +1,65 @@
-/* RESET ALL */
+/* =========== RESET ALL =========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+a {
+  text-decoration: none;
 }
 
 img {
   width: 100%;
   height: auto;
 }
+/* =========== VARIABLES ========== */
+:root {
+  font-size: 62.5%;
+  --base-color: hsl(159, 36%, 57%);
+  --base-color-second: hsl(159, 65%, 88%);
+  --base-color-alt: hsl(159, 57%, 53%);
+  --title-color: hsl(159, 41%, 10%);
+  --text-color: hsl(0% 0% 46%);
+  --text-color-light: hsl(0, 0%, 98%);
+  --body-color: hsl(0, 0%, 100%);
+}
 
+/* =========== BASE ========== */
+body {
+  font: 400 1.6rem 'DM Sans', sans-serif;
+  color: var(--text-color);
+  background-color: var(--body-color);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font: 700 3rem 'Popins', sans-serif;
+  color: var(--title-color);
+  -webkit-font-smoothing: auto;
+}
+
+.button {
+}
+
+/* ========== LAYOUT ========= */
 #header {
-  height: 7.2rem;
+  border-bottom: 1px solid hsl(0, 0%, 89%, 1);
 }
 
 nav {
+  height: 7.2rem;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
 .logo {
+  font: 700 2.1rem 'Poppins', sans-serif;
+  color: var(--title-color);
+}
+.logo span {
+  color: var(--base-color);
 }
 
 .container {
@@ -31,3 +67,9 @@ nav {
   margin-left: 2.4rem;
   margin-right: 2.4rem;
 }
+
+.section {
+  padding: 8rem 0;
+}
+
+/* ========= HOME ========= */
