@@ -13,18 +13,19 @@ img {
   width: 100%;
   height: auto;
 }
+
 /* =========== VARIABLES ========== */
 :root {
-  --header-height: var(7.2rem);
+  font-size: 62.5%;
+  --header-height: 7.2rem;
 
   /* COLORS */
   --hue: 159;
-  font-size: 62.5%;
   --base-color: hsl(var(--hue), 36%, 57%);
   --base-color-second: hsl(var(--hue), 65%, 88%);
   --base-color-alt: hsl(var(--hue), 57%, 53%);
   --title-color: hsl(var(--hue), 41%, 10%);
-  --text-color: hsl(0% 0% 46%);
+  --text-color: hsl(0%, 0%, 46%);
   --text-color-light: hsl(0, 0%, 98%);
   --body-color: hsl(0, 0%, 100%);
 }
@@ -52,26 +53,25 @@ h1 {
   padding: 0 3.2rem;
   border-radius: 0.4rem;
   font: 500 1.6rem 'DM Sans', sans-serif;
+  transition: background 0.3s;
 }
 
 .button:hover {
   background-color: var(--base-color-alt);
-  transition: 0.3s;
 }
 
 .divider-1 {
   height: 1px;
   background: linear-gradient(
     270deg,
-    hsl(var(--hue), 36%, 57%, 1) 0%,
-    hsl(var(--hue), 65%, 88%, 0.34) 100%
+    hsla(var(--hue), 36%, 57%, 1) 0%,
+    hsla(var(--hue), 65%, 88%, 0.34) 100%
   );
 }
 
 /* ========== LAYOUT ========= */
 
 .container {
-  width: 100%;
   margin-left: 2.4rem;
   margin-right: 2.4rem;
 }
@@ -90,12 +90,12 @@ h1 {
   margin-bottom: 3.2rem;
   display: flex;
 
-  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
   background-color: var(--body-color);
+  width: 100%;
 }
 
 nav {
@@ -103,6 +103,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -117,11 +118,10 @@ main {
   margin-top: var(--header-height);
 }
 
+/* ========= HOME ========= */
 #home {
   overflow: hidden;
 }
-
-/* ========= HOME ========= */
 
 #home .container {
   margin: 0;
@@ -164,5 +164,4 @@ main {
 
 #home .text p {
   margin-bottom: 3.2rem;
-  max-width: 100%;
 }
